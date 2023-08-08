@@ -158,6 +158,10 @@ h1{
     box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.349);
 }
 
+.carousel{
+    width: 75%;
+}
+
 .proyectos-recientes{
     padding: 40px;
 }
@@ -353,6 +357,17 @@ footer{
 
     .overlay i{
         font-size: 40px;
+    }
+    .proyectos-recientes{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .proyecto-contenedor{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .carousel{
+        width: 400px;
     }
 }
 

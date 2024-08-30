@@ -1,7 +1,11 @@
+import { AboutSection } from "./components/AboutSection";
+import { NavBar } from "./components/NavBar";
+
 function App() {
   return (
     <>
-      <h1>Porfolio</h1>
+      <NavBar />
+      <AboutSection />
     </>
   );
 }

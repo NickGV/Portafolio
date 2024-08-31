@@ -1,11 +1,6 @@
 import profileImg from "../assets/Profile-img.jpg";
-import { GitIcon } from "../assets/icons/GitIcon";
 import { GitHubIcon } from "../assets/icons/GitHubIcon";
-import { CssIcon } from "../assets/icons/CssIcon";
-import { JavascriptIcon } from "../assets/icons/JavascriptIcon";
-import { HtmlIcon } from "../assets/icons/HtmlIcon";
-import { ReactIcon } from "../assets/icons/ReactIcon";
-import { TailwinCssIcon } from "../assets/icons/TailwinCssIcon";
+import { LinkedinIcon } from "../assets/icons/LinkedinIcon";
 
 export const AboutSection = () => {
   return (
@@ -25,7 +20,7 @@ export const AboutSection = () => {
           <div className="flex items-center gap-4">
             <button
               type="button"
-              className="p-4 w-44 bg-button rounded-lg shadow-sm font-title text-title font-semibold hover:bg-orange-700 transition-all"
+              className="p-4 w-44 bg-button rounded-lg font-title text-title font-semibold hover:text-opacity-80 transition-all shadow-btn "
             >
               Descargar CV
             </button>
@@ -38,20 +33,34 @@ export const AboutSection = () => {
             </a>
           </div>
         </div>
-        <div className="w-profile-img">
+        <div className="w-profile-img relative">
           <img
             src={profileImg}
             alt="profile-img"
             className="rounded-full shadow-custom"
           />
-          {/* <div>
-            <button>
-              <img src={linkedInIcon} alt="linkedin" />
-            </button>
-            <button>
-              <img src={githubIcon} alt="github" />
-            </button>
-          </div> */}
+          <div className="absolute top-0 right-0">
+            <a
+              href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
+              target="_blank"
+              className="relative group text-white hover:text-link-text  hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4"
+            >
+              <LinkedinIcon />
+              <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                LinkedIn
+              </span>
+            </a>
+            <a
+              href="https://github.com/NickGV"
+              target="_blank"
+              className="group text-white hover:text-link-text hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4 absolute -right-12"
+            >
+              <GitHubIcon />
+              <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                GitHub
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

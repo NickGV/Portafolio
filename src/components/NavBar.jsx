@@ -8,7 +8,7 @@ export const NavBar = () => {
     <nav className="flex flex-col fixed right-0 min-h-screen items-center justify-center mr-8">
       <div>
         <ul className="flex flex-col gap-8 ">
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom hover:translate-x-2 hover:translate-y-2 hover:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
+          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
             <a href="#">
               <AboutIcon />
             </a>
@@ -16,7 +16,7 @@ export const NavBar = () => {
               About
             </span>
           </li>
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom hover:translate-x-2 hover:translate-y-2 hover:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
+          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
             <a href="#">
               <ProjectsIcon />
             </a>
@@ -24,7 +24,7 @@ export const NavBar = () => {
               Projects
             </span>
           </li>
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom hover:translate-x-2 hover:translate-y-2 hover:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
+          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
             <a href="#">
               <SkillsIcon />
             </a>
@@ -32,7 +32,7 @@ export const NavBar = () => {
               Skills
             </span>
           </li>
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom hover:translate-x-2 hover:translate-y-2 hover:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
+          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
             <a href="#">
               <ContactIcon />
             </a>

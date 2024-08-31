@@ -25,6 +25,7 @@ export default {
       boxShadow: {
         custom: "4px 4px 4px 0px #fffffe20",
         "custom-hover": "2px 2px px 2px #fffffe20",
+        "btn": "2px 2px 2px 0px #a7a9be20",
       }
     },
   },

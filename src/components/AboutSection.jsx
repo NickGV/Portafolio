@@ -1,6 +1,11 @@
 import profileImg from "../assets/Profile-img.jpg";
-import linkedInIcon from "../assets/linkedin-icon.svg";
-import githubIcon from "../assets/github-icon.svg";
+import { GitIcon } from "../assets/icons/GitIcon";
+import { GitHubIcon } from "../assets/icons/GitHubIcon";
+import { CssIcon } from "../assets/icons/CssIcon";
+import { JavascriptIcon } from "../assets/icons/JavascriptIcon";
+import { HtmlIcon } from "../assets/icons/HtmlIcon";
+import { ReactIcon } from "../assets/icons/ReactIcon";
+import { TailwinCssIcon } from "../assets/icons/TailwinCssIcon";
 
 export const AboutSection = () => {
   return (
@@ -20,7 +25,7 @@ export const AboutSection = () => {
           <div className="flex items-center gap-4">
             <button
               type="button"
-              className="p-4 w-44 bg-button rounded-lg shadow-sm font-title text-title font-semibold"
+              className="p-4 w-44 bg-button rounded-lg shadow-sm font-title text-title font-semibold hover:bg-orange-700 transition-all"
             >
               Descargar CV
             </button>

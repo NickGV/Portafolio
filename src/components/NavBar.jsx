@@ -1,8 +1,8 @@
-import { AboutIcon } from "./icons/AboutIcon";
-import reactIcon from "../assets/react-icon.svg";
-import { ProjectsIcon } from "./icons/ProjectsIcon";
-import { SkillsIcon } from "./icons/SkillsIcon";
-import { ContactIcon } from "./icons/ContactIcon";
+import { AboutIcon } from "../assets/icons/AboutIcon";
+import { ProjectsIcon } from "../assets/icons/ProjectsIcon";
+import { SkillsIcon } from "../assets/icons/SkillsIcon";
+import { ContactIcon } from "../assets/icons/ContactIcon";
+
 export const NavBar = () => {
   return (
     <nav className="flex flex-col fixed right-0 min-h-screen items-center justify-center mr-8">

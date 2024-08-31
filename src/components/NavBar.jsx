@@ -12,7 +12,7 @@ export const NavBar = () => {
             <a href="#">
               <AboutIcon />
             </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
               About
             </span>
           </li>
@@ -20,7 +20,7 @@ export const NavBar = () => {
             <a href="#">
               <ProjectsIcon />
             </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
               Projects
             </span>
           </li>
@@ -28,7 +28,7 @@ export const NavBar = () => {
             <a href="#">
               <SkillsIcon />
             </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
               Skills
             </span>
           </li>
@@ -36,7 +36,7 @@ export const NavBar = () => {
             <a href="#">
               <ContactIcon />
             </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
               Contact
             </span>
           </li>

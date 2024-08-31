@@ -46,7 +46,7 @@ export const AboutSection = () => {
               className="relative group text-white hover:text-link-text  hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4"
             >
               <LinkedinIcon />
-              <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+              <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
                 LinkedIn
               </span>
             </a>
@@ -56,7 +56,7 @@ export const AboutSection = () => {
               className="group text-white hover:text-link-text hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4 absolute -right-12"
             >
               <GitHubIcon />
-              <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+              <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
                 GitHub
               </span>
             </a>

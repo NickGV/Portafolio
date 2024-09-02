@@ -6,7 +6,7 @@ import { ContactIcon } from "../assets/icons/ContactIcon";
 export const NavBar = () => {
   return (
     <nav className="flex flex-col fixed right-0 min-h-screen items-center justify-center mr-8">
-      <div>
+      <div className="font-paragraph">
         <ul className="flex flex-col gap-8 ">
           <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
             <a href="#">

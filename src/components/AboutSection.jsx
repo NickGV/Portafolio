@@ -22,7 +22,7 @@ export const AboutSection = () => {
           <div className="flex items-center gap-4">
             <button
               type="button"
-              className="p-4 w-44 bg-button rounded-lg font-title text-title font-semibold hover:text-opacity-80 transition-all shadow-btn"
+              className="p-4 w-44 bg-button rounded-lg font-title text-button-text font-semibold hover:text-opacity-90 hover:bg-button-hover transition-all shadow-btn"
             >
               Descargar CV
             </button>

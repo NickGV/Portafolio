@@ -47,7 +47,7 @@ export const AboutSection = () => {
               target="_blank"
               className="relative group text-white hover:text-link-text  hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4"
             >
-              <LinkedInIcon />
+              <LinkedInIcon className={"h-8 w-8"}/>
               <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
                 LinkedIn
               </span>
@@ -57,7 +57,7 @@ export const AboutSection = () => {
               target="_blank"
               className="group text-white hover:text-link-text hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4 absolute -right-12"
             >
-              <GitHubIcon />
+              <GitHubIcon className={"h-8 w-8"}/>
               <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
                 GitHub
               </span>

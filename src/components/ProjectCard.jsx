@@ -42,7 +42,7 @@ export const ProjectCard = ({ project }) => {
               rel="noreferrer"
               className="text-white hover:text-link-text transition-colors flex gap-2 items-center "
             >
-              <GitHubIcon />
+              <GitHubIcon className={"h-10 w-10"}/>
               código
             </a>
             <a
@@ -51,7 +51,7 @@ export const ProjectCard = ({ project }) => {
               rel="noreferrer"
               className="text-white hover:text-link-text transition-colors flex gap-2 items-center "
             >
-              <LaptopIcon />
+              <LaptopIcon className={"h-10 w-10"}/>
               proyecto
             </a>
           </div>

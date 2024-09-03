@@ -1,7 +1,9 @@
-import { AboutIcon } from "../assets/icons/AboutIcon";
-import { ProjectsIcon } from "../assets/icons/ProjectsIcon";
-import { SkillsIcon } from "../assets/icons/SkillsIcon";
-import { ContactIcon } from "../assets/icons/ContactIcon";
+import {
+  AboutIcon,
+  ProjectsIcon,
+  SkillsIcon,
+  ContactIcon,
+} from "../assets/icons";
 
 export const NavBar = () => {
   return (

@@ -1,5 +1,4 @@
-import { GitHubIcon } from "../assets/icons/GitHubIcon";
-import { LaptopIcon } from "../assets/icons/LaptopIcon";
+import { GitHubIcon, LaptopIcon } from "../assets/icons";
 
 const labelColors = {
   primary: "#4FD1C5", // Cyan

@@ -1,6 +1,5 @@
 import profileImg from "../assets/Profile-img.jpg";
-import { GitHubIcon } from "../assets/icons/GitHubIcon";
-import { LinkedinIcon } from "../assets/icons/LinkedinIcon";
+import { GitHubIcon, LinkedInIcon } from "../assets/icons";
 
 export const AboutSection = () => {
   return (
@@ -48,7 +47,7 @@ export const AboutSection = () => {
               target="_blank"
               className="relative group text-white hover:text-link-text  hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4"
             >
-              <LinkedinIcon />
+              <LinkedInIcon />
               <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
                 LinkedIn
               </span>

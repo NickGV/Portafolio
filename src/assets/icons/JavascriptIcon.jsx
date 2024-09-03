@@ -1,4 +1,4 @@
-export const JavascriptIcon = () => {
+export const JavascriptIcon = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +8,7 @@ export const JavascriptIcon = () => {
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-brand-javascript"
+      className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" fill="none"  />

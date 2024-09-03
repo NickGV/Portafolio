@@ -4,44 +4,21 @@ import {
   SkillsIcon,
   ContactIcon,
 } from "../assets/icons";
-
+import { NavBarItem } from "./NavBarItem";
 export const NavBar = () => {
+  const navItems = [
+    { Icon: AboutIcon, name: "About" },
+    { Icon: ProjectsIcon, name: "Projects" },
+    { Icon: SkillsIcon, name: "Skills" },
+    { Icon: ContactIcon, name: "Contact" },
+  ];
   return (
     <nav className="flex flex-col fixed right-0 min-h-screen items-center justify-center mr-8">
       <div className="font-paragraph">
         <ul className="flex flex-col gap-8 ">
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
-            <a href="#">
-              <AboutIcon />
-            </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
-              About
-            </span>
-          </li>
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
-            <a href="#">
-              <ProjectsIcon />
-            </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
-              Projects
-            </span>
-          </li>
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
-            <a href="#">
-              <SkillsIcon />
-            </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
-              Skills
-            </span>
-          </li>
-          <li className="group relative p-4 bg-card-background rounded-full shadow-custom active:translate-x-2 active:translate-y-2 active:shadow-custom-hover transition-all text-white  hover:text-orange-600 cursor-pointer">
-            <a href="#">
-              <ContactIcon />
-            </a>
-            <span className="absolute right-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
-              Contact
-            </span>
-          </li>
+          {navItems.map((item) => (
+            <NavBarItem key={item.name} Icon={item.Icon} name={item.name} />
+          ))}
         </ul>
       </div>
       {/* TODO: Create button to change the language and the theme */}

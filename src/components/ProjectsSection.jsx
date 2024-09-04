@@ -2,7 +2,7 @@ import projects from "../data/projects";
 import { ProjectCard } from "./ProjectCard";
 export const ProjectsSection = () => {
   return (
-    <section className="min-h-screen flex md:max-w-4xl 2xl:max-w-5xl mx-auto">
+    <section id="Projects" className="min-h-screen flex md:max-w-4xl 2xl:max-w-5xl mx-auto">
       <div>
         <h2 className="text-5xl font-bold text-title mb-8">Projects</h2>
         <div className="grid grid-cols-3 gap-y-8 gap-x-4 grid-rows-2">

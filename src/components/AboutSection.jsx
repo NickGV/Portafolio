@@ -1,9 +1,20 @@
+import { useState } from "react";
 import profileImg from "../assets/Profile-img.jpg";
 import { GitHubIcon, LinkedInIcon } from "../assets/icons";
 
 export const AboutSection = () => {
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const handleEmailCopy = () => {
+    navigator.clipboard.writeText("nickgomvelez@gmail.com");
+    setEmailCopied(true);
+    setTimeout(() => setEmailCopied(false), 2000);
+  };
   return (
-    <section className="min-h-screen flex items-center justify-center md:max-w-4xl 2xl:max-w-5xl  mx-auto">
+    <section
+      id="About"
+      className="min-h-screen flex items-center justify-center md:max-w-4xl 2xl:max-w-5xl  mx-auto"
+    >
       <div className="flex justify-center items-center gap-4 w-full">
         <div>
           <h1 className="flex flex-col text-5xl font-title font-semibold text-title">
@@ -29,9 +40,11 @@ export const AboutSection = () => {
 
             <a
               href="#"
-              className="text-link-text underline font-semibold text-lg font-paragraph"
+              className="relative text-link-text underline font-semibold text-lg font-paragraph"
+              onClick={handleEmailCopy}
             >
               Nickgomvelez@gmail.com
+              <span className="absolute text-paragraph bottom-5 right-0">{emailCopied && "Copiado!"}</span>
             </a>
           </div>
         </div>
@@ -47,7 +60,7 @@ export const AboutSection = () => {
               target="_blank"
               className="relative group text-white hover:text-link-text  hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4"
             >
-              <LinkedInIcon className={"h-8 w-8"}/>
+              <LinkedInIcon className={"h-8 w-8"} />
               <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
                 LinkedIn
               </span>
@@ -57,7 +70,7 @@ export const AboutSection = () => {
               target="_blank"
               className="group text-white hover:text-link-text hover:scale-110 transition-all p-4 bg-card-background shadow-custom rounded-full mb-4 absolute -right-12"
             >
-              <GitHubIcon className={"h-8 w-8"}/>
+              <GitHubIcon className={"h-8 w-8"} />
               <span className="absolute left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
                 GitHub
               </span>

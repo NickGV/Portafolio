@@ -23,7 +23,7 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <section className="min-h-screen flex justify-center items-center py-20 bg-background">
+    <section id="Skills" className="min-h-screen flex justify-center items-center py-20 bg-background">
       <div className="w-full max-w-5xl 2xl:max-w-6xl mx-auto px-4">
         <h1 className="text-6xl font-title font-bold mb-10 text-title">
           Mis Habilidades

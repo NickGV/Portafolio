@@ -11,7 +11,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section className="flex justify-center items-center py-20 bg-background">
+    <section id="Contact" className="flex justify-center items-center py-20 bg-background">
       <div className="bg-card-background w-1/2 rounded-3xl p-12 flex gap-4 items-center">
         <div>
           <h2 className="text-title font-title text-4xl mb-4">

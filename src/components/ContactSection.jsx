@@ -46,7 +46,9 @@ export const ContactSection = () => {
               <span>GitHub</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/example"
+              href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
+              target="_blank"
+              rel="noreferrer"
               className="flex flex-col items-center text-title hover:text-link-text transition-colors mr-4"
             >
               <LinkedInIcon className={"w-10 h-10"} />

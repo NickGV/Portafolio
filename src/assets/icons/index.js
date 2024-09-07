@@ -11,3 +11,4 @@ export * from './AboutIcon';
 export * from './ProjectsIcon';
 export * from './SkillsIcon';
 export * from './ContactIcon';
+export * from './NavBarNavigatorIcon';  

@@ -8,7 +8,7 @@ const labelColors = {
 
 export const ProjectCard = ({ project }) => {
   return (
-    <div className="flex flex-col bg-card-background rounded-md shadow-custom max-w-sm lg:w-full hover:scale-105">
+    <div className="flex flex-col bg-card-background rounded-md shadow-custom max-w-lg lg:w-full hover:scale-105">
       <img src={project.image} alt="" className="rounded-t-md" />
       <div className="flex flex-col h-full p-4">
         <div className="flex gap-2 items-center mb-2">

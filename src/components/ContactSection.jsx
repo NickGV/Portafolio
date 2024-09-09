@@ -12,7 +12,7 @@ export const ContactSection = () => {
 
   return (
     <section id="Contact" className="py-20 bg-background flex flex-col items-center">
-      <div className="bg-card-background w-full max-w-4xl mx-4 rounded-3xl p-8 flex flex-col lg:flex-row items-center gap-8">
+      <div className="bg-card-background w-full max-w-lg lg:max-w-4xl mx-4 rounded-3xl p-8 flex flex-col lg:flex-row items-center gap-8">
         <div className="lg:w-1/2">
           <h2 className="text-title font-title text-3xl lg:text-4xl mb-4">
             Trabajemos juntos

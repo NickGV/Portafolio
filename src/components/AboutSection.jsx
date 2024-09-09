@@ -1,87 +1,35 @@
-import { useState } from "react";
-import profileImg from "../assets/Profile-img.jpg";
-import { GitHubIcon, LinkedInIcon } from "../assets/icons";
-
+import profileImg from "../assets/profile-img.jpg";
 export const AboutSection = () => {
-  const [emailCopied, setEmailCopied] = useState(false);
-
-  const handleEmailCopy = () => {
-    navigator.clipboard.writeText("nickgomvelez@gmail.com");
-    setEmailCopied(true);
-    setTimeout(() => setEmailCopied(false), 2000);
-  };
-
   return (
     <section
       id="About"
-      className="min-h-screen flex items-center justify-center px-4 lg:px-8 lg:px-16"
+      className="flex flex-col gap-6 lg:flex-row items-center md:max-w-4xl 2xl:max-w-5xl mx-auto px-4"
     >
-      <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 w-full lg:max-w-4xl 2xl:max-w-5xl mx-auto">
-        <div className="text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl font-title font-semibold text-title">
-            <span>Mi nombre es</span>
-            <span className="block">Nicolas Gomez Velez</span>
-          </h1>
-          <p className="font-medium text-title text-xl lg:text-2xl mb-2">
-            Soy un desarrollador Frontend
-          </p>
-          <p className="text-paragraph font-paragraph text-base lg:text-lg max-w-prose mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a
-            ducimus eius, consequatur unde reprehenderit repellendus dolorum
-            tempora perferendis corporis similique modi sed id quod. Cum libero
-            voluptate corrupti cupiditate.
-          </p>
-          <div className="flex flex-col lg:flex-row items-center gap-4">
-            <button
-              type="button"
-              className="p-3 lg:p-4 w-40 lg:w-44 bg-button rounded-lg font-title text-button-text font-semibold hover:text-opacity-90 hover:bg-button-hover transition-all shadow-btn"
-            >
-              Descargar CV
-            </button>
-
-            <a
-              href="#"
-              className="relative text-link-text underline font-semibold text-lg font-paragraph"
-              onClick={handleEmailCopy}
-            >
-              Nickgomvelez@gmail.com
-              <span className="absolute text-paragraph bottom-5 right-0">
-                {emailCopied && "Copiado!"}
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div className="w-32 lg:w-full relative">
-          <img
-            src={profileImg}
-            alt="profile-img"
-            className="rounded-full shadow-custom"
-          />
-          <div className="absolute top-0 -right-12 lg:top-0 lg:right-0 flex flex-col items-center gap-4">
-            <a
-              href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
-              target="_blank"
-              className="relative group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-card-background shadow-custom rounded-full mb-4"
-            >
-              <LinkedInIcon className={"h-6 lg:h-8 w-6 lg:w-8"} />
-              <span className="absolute left-12 lg:left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
-                LinkedIn
-              </span>
-            </a>
-
-            <a
-              href="https://github.com/NickGV"
-              target="_blank"
-              className="group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-card-background shadow-custom rounded-full mb-4 lg:absolute lg:-bottom-20 lg:-right-12"
-            >
-              <GitHubIcon className={"h-6 lg:h-8 w-6 lg:w-8"} />
-              <span className="absolute left-12 lg:left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
-                GitHub
-              </span>
-            </a>
-          </div>
-        </div>
+      <div className="text-paragraph max-w-prose flex flex-col gap-2 text-left">
+        <h1 className="text-title text-xl md:text-3xl">Un poco sobre mi:</h1>
+        <p>
+          Me llamo Nicolás Gómez, pero puedes llamarme Nico. Mi viaje en la
+          programación comenzó hace un año y medio, cuando empecé a aprender por
+          mi cuenta mediante cursos en línea. Desde entonces, he trabajado en
+          una variedad de proyectos personales, desde el desarrollo de
+          interfaces con HTML, CSS y JavaScript, hasta el uso de frameworks
+          modernos como React y Tailwind CSS.
+        </p>
+        <p>
+          Actualmente, sigo aprendiendo mas sobre la programación front-end con
+          una creciente pasión por el backend. Estoy en mi tercer semestre de la
+          carrera de Desarrollo de Software en la IU Digital de Antioquia y
+          también cuento con un título técnico en Programación para Analítica de
+          Datos.
+        </p>
+        <p>
+          Mi objetivo es continuar desarrollándome como profesional y llevar
+          proyectos desde el diseño hasta la implementación, combinando
+          creatividad y eficiencia.
+        </p>
+      </div>
+      <div>
+        <img src={profileImg} alt="" className="rounded-full shadow-custom" />
       </div>
     </section>
   );

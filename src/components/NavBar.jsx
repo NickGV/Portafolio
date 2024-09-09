@@ -30,6 +30,7 @@ import {
   AboutIcon,
   ProjectsIcon,
   SkillsIcon,
+  HomeIcon,
   ContactIcon,
   NavBarNavigatorIcon,
 } from "../assets/icons";
@@ -38,9 +39,10 @@ import { NavBarItem } from "./NavBarItem";
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar el menú
   const navItems = [
-    { Icon: AboutIcon, name: "About" },
+    { Icon: HomeIcon, name: "Home" },
     { Icon: ProjectsIcon, name: "Projects" },
     { Icon: SkillsIcon, name: "Skills" },
+    { Icon: AboutIcon, name: "About" },
     { Icon: ContactIcon, name: "Contact" },
   ];
 

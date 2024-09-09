@@ -10,5 +10,6 @@ export * from './LaptopIcon';
 export * from './AboutIcon';
 export * from './ProjectsIcon';
 export * from './SkillsIcon';
+export * from './HomeIcon';
 export * from './ContactIcon';
 export * from './NavBarNavigatorIcon';  

@@ -52,12 +52,12 @@ export const NavBar = () => {
     <nav>
       <button
         onClick={toggleMenu}
-        className="fixed bottom-4 right-4 bg-card-background text-white p-4 rounded-full shadow-lg transition-all hover:text-button lg:hidden"
+        className="fixed bottom-4 right-4 bg-card-background text-white p-4 rounded-full shadow-md shadow-gray-500 transition-all hover:text-button lg:hidden z-10"
       >
         {menuOpen ? (
-          <NavBarNavigatorIcon className="w-6 h-6 text-button" />
+          <NavBarNavigatorIcon className="w-8 h-8 text-button" />
         ) : (
-          <NavBarNavigatorIcon className="w-6 h-6 " />
+          <NavBarNavigatorIcon className="w-8 h-8 " />
         )}
       </button>
       <div

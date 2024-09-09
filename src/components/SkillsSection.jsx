@@ -23,16 +23,16 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <section id="Skills" className="min-h-screen flex justify-center items-center py-20 bg-background">
+    <section id="Skills" className="min-h-screen flex justify-center items-center py-10 md:py-20 bg-background">
       <div className="w-full max-w-5xl 2xl:max-w-6xl mx-auto px-4">
-        <h1 className="text-6xl font-title font-bold mb-10 text-title">
+        <h1 className="text-4xl md:text-6xl font-title font-bold mb-6 md:mb-10 text-title">
           Mis Habilidades
         </h1>
-        <div className="bg-card-background rounded-3xl p-12">
-          <h2 className="text-3xl font-title font-semibold mb-8 text-paragraph">
+        <div className="bg-card-background rounded-3xl p-6 md:p-12">
+          <h2 className="text-2xl md:text-3xl font-title font-semibold mb-6 md:mb-8 text-paragraph">
             Frontend
           </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10">
             {skills.map((skill, index) => (
               <SkillCard key={index} {...skill} />
             ))}
@@ -42,3 +42,5 @@ export const SkillsSection = () => {
     </section>
   );
 };
+
+

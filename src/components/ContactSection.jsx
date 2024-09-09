@@ -11,53 +11,43 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="Contact" className="py-20 bg-background flex flex-col items-center">
-      <div className="bg-card-background w-full max-w-lg lg:max-w-4xl mx-4 rounded-3xl p-8 flex flex-col lg:flex-row items-center gap-8">
-        <div className="lg:w-1/2">
-          <h2 className="text-title font-title text-3xl lg:text-4xl mb-4">
-            Trabajemos juntos
-          </h2>
-          <p className="text-paragraph font-paragraph mb-8">
-            Estoy emocionado de colaborar en nuevos proyectos. No dude en
-            comunicarse conmigo. Envíeme un correo electrónico y analicemos cómo
-            puedo ayudarle a llevar sus ideas a la vida.
+    <section id="Contact" className="py-20 flex flex-col items-center">
+      <div className="w-full max-w-lg mx-4 p-8 flex flex-col items-center gap-4 text-paragraph">
+        <h2 className="text-3xl mb-4 text-title ">Contacto</h2>
+        <p className="text-center mb-6">
+          Estoy disponible para nuevos proyectos. Contacta conmigo por email o
+          sígueme en mis redes sociales.
+        </p>
+        <div className="mb-4">
+          <p className="cursor-pointer " onClick={handleEmailCopy}>
+            {emailCopied ? (
+              <span className="text-green-500">¡Copiado!</span>
+            ) : (
+              <span className="text-link-text underline">
+                nickgomvelez@gmail.com
+              </span>
+            )}
           </p>
         </div>
-        <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
-          <div className="group flex flex-col items-center mb-8">
-            <p
-              className="text-link-text font-paragraph cursor-pointer relative"
-              onClick={handleEmailCopy}
-            >
-              {emailCopied ? (
-                <span className="absolute -top-6 left-0 text-black font-bold text-sm bg-slate-400 rounded-full p-1 opacity-100 transition-opacity">
-                  Copiado!
-                </span>
-              ) : (
-                "nickgomvelez@gmail.com"
-              )}
-            </p>
-          </div>
-          <div className="flex gap-4">
-            <a
-              href="https://github.com/NickGV"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col items-center text-title hover:text-link-text transition-colors"
-            >
-              <GitHubIcon className="w-10 h-10 mb-2" />
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col items-center text-title hover:text-link-text transition-colors"
-            >
-              <LinkedInIcon className="w-10 h-10 mb-2" />
-              <span>LinkedIn</span>
-            </a>
-          </div>
+        <div className="flex gap-4">
+          <a
+            href="https://github.com/NickGV"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-col items-center text-gray-600 hover:text-black transition-colors"
+          >
+            <GitHubIcon className="w-8 h-8 mb-2" />
+            <span className="text-sm">GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex flex-col items-center text-gray-600 hover:text-black transition-colors"
+          >
+            <LinkedInIcon className="w-8 h-8 mb-2" />
+            <span className="text-sm">LinkedIn</span>
+          </a>
         </div>
       </div>
     </section>

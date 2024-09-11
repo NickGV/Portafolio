@@ -29,7 +29,11 @@ export const AboutSection = () => {
         </p>
       </div>
       <div>
-        <img src={profileImg} alt="" className="rounded-full shadow-custom" />
+        <img
+          src={profileImg}
+          alt="profile-img"
+          className="rounded-full shadow-custom"
+        />
       </div>
     </section>
   );

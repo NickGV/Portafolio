@@ -14,7 +14,7 @@ export const HomeSection = () => {
   return (
     <section
       id="Home"
-      className="min-h-screen flex items-center justify-center px-4 lg:px-8 lg:px-16"
+      className="min-h-screen flex items-center justify-center px-4 lg:px-16"
     >
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 w-full lg:max-w-4xl 2xl:max-w-5xl mx-auto">
         <div className="text-center lg:text-left">

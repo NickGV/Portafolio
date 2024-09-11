@@ -1,5 +1,5 @@
 import musicXplore from "../assets/musicXplore.webp";
-import fyloLandingPage from "../assets/Fylo-landing-page.webp";
+import fyloLandingPage from "../assets/fylo-landing-page.webp";
 import contacEasy from "../assets/contactEasy.webp";
 import blogi from "../assets/blogi.webp";
 import eComerce from "../assets/e-commerce.webp";

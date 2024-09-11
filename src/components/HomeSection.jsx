@@ -1,5 +1,5 @@
 import { useState } from "react";
-import profileImg from "../assets/Profile-img.jpg";
+import profileImg from "../assets/profile-img.jpg";
 import { GitHubIcon, LinkedInIcon } from "../assets/icons";
 
 export const HomeSection = () => {

@@ -5,14 +5,13 @@ export default {
     extend: {
       colors: {
         background: "#0f0e17",
-        paragraph: "#a7a9be",
-        title: "#fffffe",
-        button: "#ff8906",
-        "button-hover": "#ff8906",
-        "button-text": "#fffffe",
-        "button-text-active": "#fffffe",
-        "link-text": "#e53170",
-        "card-background": "#1f1e28",
+        paragraph: "#b3b5c4",
+        title: "#ffffff",
+        button: "#ff7e36",
+        "button-hover": "#ff6f24",
+        "button-text": "#ffffff",
+        "link-text": "#e94b75",
+        "card-background": "#252332",
       },
       fontFamily: {
         title: ["Poppins", "sans-serif"],
@@ -25,6 +24,7 @@ export default {
       boxShadow: {
         custom: "4px 4px 4px 0px #fffffe20",
         "custom-hover": "2px 2px px 2px #fffffe20",
+        "btn": "2px 2px 2px 0px #a7a9be20",
       }
     },
   },

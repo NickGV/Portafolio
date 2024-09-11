@@ -1,17 +1,15 @@
 
-export const SkillsIcon = () => {
+export const SkillsIcon = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={30}
-      height={30}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-brain"
+      className={`icon icon-tabler icons-tabler-outline icon-tabler-brain ${className}`}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8" fill="none"/>

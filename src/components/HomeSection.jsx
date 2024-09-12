@@ -31,12 +31,12 @@ export const HomeSection = () => {
             aprendiendo y desarrollando aplicaciones web.
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4">
-            <button
-              type="button"
-              className="p-3 lg:p-4 w-40 lg:w-44 bg-button rounded-lg font-title text-button-text font-semibold hover:text-opacity-90 hover:bg-button-hover transition-all shadow-btn"
+            <a
+              href="https://drive.google.com/uc?export=download&id=1i_x1dmnv8HBSMwPVtLCv2uOGMNYSqT9B"
+              className="p-4 lg:p-4 w-40 lg:w-44 bg-button rounded-lg font-title text-button-text font-semibold hover:text-opacity-90 hover:bg-button-hover transition-all shadow-btn text-center"
             >
               Descargar CV
-            </button>
+            </a>
 
             <a
               href="#"

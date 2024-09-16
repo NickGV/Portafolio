@@ -1,30 +1,3 @@
-// import {
-//   AboutIcon,
-//   ProjectsIcon,
-//   SkillsIcon,
-//   ContactIcon,
-// } from "../assets/icons";
-// import { NavBarItem } from "./NavBarItem";
-// export const NavBar = () => {
-//   const navItems = [
-//     { Icon: AboutIcon, name: "About" },
-//     { Icon: ProjectsIcon, name: "Projects" },
-//     { Icon: SkillsIcon, name: "Skills" },
-//     { Icon: ContactIcon, name: "Contact" },
-//   ];
-//   return (
-//     <nav className="flex flex-col fixed right-0 min-h-screen items-center justify-center mr-8">
-//       <div className="font-paragraph">
-//         <ul className="flex flex-col gap-8 ">
-//           {navItems.map((item) => (
-//             <NavBarItem key={item.name} Icon={item.Icon} name={item.name} />
-//           ))}
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
 import { useState } from "react";
 import {
   AboutIcon,
@@ -37,7 +10,7 @@ import {
 import { NavBarItem } from "./NavBarItem";
 
 export const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar el menú
+  const [menuOpen, setMenuOpen] = useState(false); 
   const navItems = [
     { Icon: HomeIcon, name: "Home" },
     { Icon: ProjectsIcon, name: "Projects" },

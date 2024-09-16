@@ -25,8 +25,8 @@ export default {
       },
       boxShadow: {
         custom: "4px 4px 12px 0px rgba(255, 255, 254, 0.1)",
-        "custom-hover": "2px 2px 8px 2px rgba(255, 255, 254, 0.15)",
-        btn: "2px 2px 8px 0px rgba(255, 126, 54, 0.3)",
+        "custom-hover": "2px 2px px 2px #fffffe20",
+        btn: "2px 2px 2px 0px #a7a9be20",
       },
     },
   },

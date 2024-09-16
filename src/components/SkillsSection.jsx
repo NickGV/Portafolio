@@ -23,9 +23,12 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <section id="Skills" className="min-h-screen max-w-lg md:max-w-4xl 2xl:max-w-5xl mx-auto flex justify-center items-center py-10 md:py-20 bg-background">
+    <section
+      id="Skills"
+      className="min-h-screen max-w-lg md:max-w-4xl 2xl:max-w-5xl mx-auto flex justify-center items-center py-10 md:py-20"
+    >
       <div className="w-full max-w-5xl 2xl:max-w-6xl mx-auto px-4">
-        <h1 className="text-4xl md:text-6xl font-title font-bold mb-6 md:mb-10 text-title">
+        <h1 className="text-4xl md:text-5xl font-title font-bold mb-6 md:mb-10 text-title">
           Mis Habilidades
         </h1>
         <div className="bg-card-background rounded-3xl p-6 md:p-12">
@@ -42,5 +45,3 @@ export const SkillsSection = () => {
     </section>
   );
 };
-
-

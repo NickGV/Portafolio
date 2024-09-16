@@ -34,7 +34,7 @@ export const ContactSection = () => {
             href="https://github.com/NickGV"
             target="_blank"
             rel="noreferrer"
-            className="flex flex-col items-center text-gray-600 hover:text-black transition-colors"
+            className="flex flex-col items-center text-gray-600 hover:text-white transition-colors"
           >
             <GitHubIcon className="w-8 h-8 mb-2" />
             <span className="text-sm">GitHub</span>
@@ -43,7 +43,7 @@ export const ContactSection = () => {
             href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
             target="_blank"
             rel="noreferrer"
-            className="flex flex-col items-center text-gray-600 hover:text-black transition-colors"
+            className="flex flex-col items-center text-gray-600 hover:text-white transition-colors"
           >
             <LinkedInIcon className="w-8 h-8 mb-2" />
             <span className="text-sm">LinkedIn</span>

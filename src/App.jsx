@@ -8,7 +8,7 @@ import { SkillsSection } from "./components/SkillsSection";
 
 function App() {
   return (
-    <>
+    <div className="bg-gradient-to-tl from-background-light to-background relative">
       <NavBar />
       <HomeSection />
       <ProjectsSection />
@@ -16,7 +16,7 @@ function App() {
       <AboutSection />
       <ContactSection />
       <FooterSection />
-    </>
+    </div>
   );
 }
 

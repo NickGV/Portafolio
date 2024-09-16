@@ -21,7 +21,7 @@ export const HomeSection = () => {
           <h1 className="text-4xl lg:text-5xl font-title font-semibold text-title flex flex-col lg:flex-row items-center gap-4">
             <span>Mi nombre es Nicolas Gomez Velez </span>
           </h1>
-          <div className="bg-green-500 text-white p-1 w-36 rounded-full shadow-lg my-2">
+          <div className="bg-green-500 text-white p-1 w-36 rounded-full shadow-lg my-2 flex justify-center items-center text-center mx-auto lg:mx-0">
             <span className="font-semibold text-xs ">
               Disponible para Trabajar
             </span>

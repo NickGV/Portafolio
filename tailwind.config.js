@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#25232f",
+        background: "#0f0e17",
         "background-light": "#252332",
         paragraph: "#d1d3e0",
         title: "#ffffff",
@@ -28,6 +28,9 @@ export default {
         custom: "4px 4px 12px 0px rgba(255, 255, 254, 0.1)",
         "custom-hover": "2px 2px px 2px #fffffe20",
         btn: "2px 2px 2px 0px #a7a9be20",
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
   },

@@ -1,5 +1,6 @@
 import { AboutSection } from "./components/AboutSection";
 import { BackgroundComponent } from "./components/Background/BackgroundComponent";
+import { BackgroundWatermark } from "./components/Background/BackgroundWatermark";
 import { ContactSection } from "./components/ContactSection";
 import { FooterSection } from "./components/FooterSection";
 import { HomeSection } from "./components/HomeSection";
@@ -9,15 +10,18 @@ import { SkillsSection } from "./components/SkillsSection";
 
 function App() {
   return (
-    <BackgroundComponent>
-      <NavBar />
-      <HomeSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <AboutSection />
-      <ContactSection />
-      <FooterSection />
-    </BackgroundComponent>
+    <div className="relative bg-gradient-radial from-background to-background-light">
+      <BackgroundWatermark />
+      <div className="relative z-10">
+        <NavBar />
+        <HomeSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <AboutSection />
+        <ContactSection />
+        <FooterSection />
+      </div>
+    </div>
   );
 }
 

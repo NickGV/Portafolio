@@ -61,7 +61,7 @@ export const HomeSection = () => {
             <a
               href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
               target="_blank"
-              className="relative group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-card-background shadow-custom rounded-full mb-4"
+              className="relative group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-slate-950 shadow-custom rounded-full mb-4"
             >
               <LinkedInIcon className={"h-6 lg:h-8 w-6 lg:w-8"} />
               <span className="absolute left-12 lg:left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">
@@ -72,7 +72,7 @@ export const HomeSection = () => {
             <a
               href="https://github.com/NickGV"
               target="_blank"
-              className="group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-card-background shadow-custom rounded-full mb-4 lg:absolute lg:-bottom-20 lg:-right-12"
+              className="group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-slate-950 shadow-custom rounded-full mb-4 lg:absolute lg:-bottom-20 lg:-right-12"
             >
               <GitHubIcon className={"h-6 lg:h-8 w-6 lg:w-8"} />
               <span className="absolute left-12 lg:left-16 top-1/2 transform -translate-y-1/2 px-2 py-1 text-paragraph rounded opacity-0 group-hover:opacity-100 transition-opacity font-semibold font-paragraph">

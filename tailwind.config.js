@@ -4,16 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#1a1825",
+        background: "#25232f",
         "background-light": "#252332",
         paragraph: "#d1d3e0",
         title: "#ffffff",
-        button: "#ff7e36",
-        "button-hover": "#ff8c40",
+        button: "#ff8c40",
+        "button-bg-gray": "#3e3e3e",
+        "button-hover": "#ff7930",
         "button-text": "#ffffff",
         "link-text": "#e94b75",
         "card-background": "#2d2b3d",
-        circle: "#000000",
+
       },
       fontFamily: {
         title: ["Poppins", "sans-serif"],

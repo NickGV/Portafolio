@@ -15,6 +15,8 @@ export const ExpressJsIcon = ({ className }) => {
       <path d="M4 4h8" />
       <path d="M4 12h6" />
       <path d="M4 20h8" />
+      <path d="M16 4l6 16" />
+      <path d="M22 4l-6 16" />
     </svg>
   );
 };

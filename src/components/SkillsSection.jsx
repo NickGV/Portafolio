@@ -5,6 +5,11 @@ import {
   HtmlIcon,
   JavascriptIcon,
   ReactIcon,
+  TailwindCssIcon,
+  SQLIcon,
+  NodejsIcon,
+  ExpressIcon,
+  MongoDBIcon,
 } from "../assets/icons";
 import { SkillCard } from "./SkillCard";
 
@@ -20,6 +25,15 @@ export const SkillsSection = () => {
     { Icon: ReactIcon, name: "React", color: "group-hover:text-blue-300" },
     { Icon: GitHubIcon, name: "GitHub", color: "group-hover:text-gray-400" },
     { Icon: GitIcon, name: "Git", color: "group-hover:text-orange-400" },
+    { Icon: TailwindCssIcon, name: "Tailwind CSS", color: "group-hover:text-blue-400" },
+    { Icon: NodejsIcon, name: "Node.js", color: "group-hover:text-green-500" },
+    { Icon: SQLIcon, name: "SQL", color: "group-hover:text-orange-400" },
+    { Icon: ExpressIcon, name: "Express", color: "group-hover:text-gray-400" },
+    {
+      Icon: MongoDBIcon,
+      name: "MongoDB",
+      color: "group-hover:text-green-500",
+    },
   ];
 
   return (

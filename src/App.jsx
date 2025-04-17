@@ -1,5 +1,4 @@
 import { AboutSection } from "./components/AboutSection";
-import { BackgroundComponent } from "./components/Background/BackgroundComponent";
 import { BackgroundWatermark } from "./components/Background/BackgroundWatermark";
 import { ContactSection } from "./components/ContactSection";
 import { FooterSection } from "./components/FooterSection";

@@ -10,7 +10,7 @@ const labelColors = {
 
 export const ProjectCard = ({ project }) => {
   const [showDetails, setShowDetails] = useState(false);
-
+  console.log(showDetails)
   return (
     <>
       <div 
@@ -26,7 +26,7 @@ export const ProjectCard = ({ project }) => {
                 labelColors.secondary,
                 labelColors.alternative,
               ];
-              const color = colorOptions[index % colorOptions.length]; // Alternar entre los colores disponibles
+              const color = colorOptions[index % colorOptions.length]; 
               return (
                 <span
                   key={index}

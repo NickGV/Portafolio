@@ -3,8 +3,8 @@ import { GitHubIcon, LaptopIcon } from "../assets/icons";
 
 export const ProjectDetailsPopUp = ({ project, onClose }) => {
   useEffect(() => {
-    document.body.style.overflow = "hidden"; 
-    
+    document.body.style.overflow = "hidden";
+
     const handleKeyDown = (event) => {
       if (event.key === "Escape") {
         onClose();
@@ -14,11 +14,12 @@ export const ProjectDetailsPopUp = ({ project, onClose }) => {
     window.addEventListener("keydown", handleKeyDown);
 
     return () => {
+      document.body.style.overflow = "auto";
       window.removeEventListener("keydown", handleKeyDown);
     };
   });
   return (
-    <div className="fixed z-50 flex items-center justify-center backdrop-blur-sm top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
+    <div className="fixed z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
       <div className="relative bg-card-background rounded-lg shadow-xl w-11/12 max-w-4xl max-h-[90vh] overflow-y-auto ">
         <button
           className="absolute top-3 right-3 text-white bg-card-background rounded-full w-8 h-8 flex items-center justify-center bg-black/50 hover:bg-black/80 transition-colors"

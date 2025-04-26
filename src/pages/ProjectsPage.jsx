@@ -1,6 +1,7 @@
 import { ProjectCard } from "../components/ProjectCard";
 import projects from "../data/projects";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   HtmlIcon,
   CssIcon,
@@ -92,6 +93,27 @@ export const ProjectsPage = () => {
 
   return (
     <main className="relative z-10 first-line:min-h-screen bg-gradient-to-b from-background to-card-background/30">
+      <div className="w-full px-4 pt-6 md:px-8">
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-link-text hover:underline transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z"
+              clipRule="evenodd"
+            />
+          </svg>
+          Back to Home
+        </Link>
+      </div>
+
       <section className="w-full pt-16 px-4 md:pt-18 flex justify-center mb-4">
         <div className="max-w-5xl w-full flex flex-col items-center">
           <h1 className="text-4xl md:text-2xl lg:text-3xl font-bold text-title text-center mb-6">

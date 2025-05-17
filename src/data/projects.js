@@ -21,7 +21,8 @@ const projects = [
     id: 2,
     title: "BookNest",
     description:
-      "BookNest es una aplicación full-stack diseñada para administrar tu biblioteca personal de forma sencilla y eficiente. Permite a los usuarios registrados añadir, editar, eliminar y visualizar información detallada de sus libros favoritos. Con una interfaz moderna y responsive, BookNest ofrece una experiencia de usuario fluida tanto en dispositivos móviles como de escritorio. La aplicación implementa autenticación mediante JWT para garantizar la seguridad de los datos de cada usuario.",
+      "Aplicación full-stack para gestionar una biblioteca personal, con autenticación JWT y diseño responsivo.",
+    more: "BookNest es una aplicación full-stack diseñada para administrar tu biblioteca personal de forma sencilla y eficiente. Permite a los usuarios registrados añadir, editar, eliminar y visualizar información detallada de sus libros favoritos. Con una interfaz moderna y responsive, BookNest ofrece una experiencia de usuario fluida tanto en dispositivos móviles como de escritorio. La aplicación implementa autenticación mediante JWT para garantizar la seguridad de los datos de cada usuario.",
     technologies: ["React", "TailwindCSS", "Node.js", "Express", "MongoDB"],
     image: bookNest,
     previewLink: "https://booknest-nickgv.netlify.app/",

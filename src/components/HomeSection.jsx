@@ -1,5 +1,5 @@
 import { useState } from "react";
-import profileImg from "../assets/profile-img.jpg";
+import profileImg from "../assets/profile_img.jpg";
 import { GitHubIcon, LinkedInIcon } from "../assets/icons";
 
 export const HomeSection = () => {
@@ -51,11 +51,11 @@ export const HomeSection = () => {
           </div>
         </div>
 
-        <div className="w-32 lg:w-full relative">
+        <div className="w-24 lg:w-full relative">
           <img
             src={profileImg}
             alt="profile-img"
-            className="rounded-full shadow-custom"
+            className="rounded-full shadow-custom w-24 lg:w-72 h-24 lg:h-72 object-cover object-top mx-auto lg:mx-0"
           />
           <div className="absolute top-0 -right-12 lg:top-0 lg:right-0 flex flex-col items-center gap-4">
             <a

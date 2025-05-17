@@ -1,25 +1,16 @@
-import { AboutSection } from "./components/AboutSection";
+import { Route, Routes } from "react-router-dom";
 import { BackgroundWatermark } from "./components/Background/BackgroundWatermark";
-import { ContactSection } from "./components/ContactSection";
-import { FooterSection } from "./components/FooterSection";
-import { HomeSection } from "./components/HomeSection";
-import { NavBar } from "./components/NavBar";
-import { ProjectsSection } from "./components/ProjectsSection";
-import { SkillsSection } from "./components/SkillsSection";
+import { Main } from "./layouts/Main";
+import { ProjectsPage } from "./pages/ProjectsPage";
 
 function App() {
   return (
     <div className="relative bg-gradient-radial from-background to-background-light">
       <BackgroundWatermark />
-      <div className="relative z-10">
-        <NavBar />
-        <HomeSection />
-        <ProjectsSection />
-        <SkillsSection />
-        <AboutSection />
-        <ContactSection />
-        <FooterSection />
-      </div>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
     </div>
   );
 }

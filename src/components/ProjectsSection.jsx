@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import projects from "../data/projects";
 import { ProjectCard } from "./ProjectCard";
 
@@ -13,12 +14,14 @@ export const ProjectsSection = () => {
           <ProjectCard key={project.id} project={project} />
         ))}
         <div className="group bg-card-background flex items-center justify-center rounded-md shadow-custom hover:scale-105 transition-all hover:shadow-none cursor-pointer p-4">
-          <a
-            href="#"
-            className="text-title font-bold text-lg group-hover:text-link-text transition-colors"
+          <Link
+            to="/projects"
+            className="text-title font-bold text-lg group-hover:text-link-text
+            transition-colors"
           >
+            {" "}
             Ver más...
-          </a>
+          </Link>
         </div>
       </div>
     </section>

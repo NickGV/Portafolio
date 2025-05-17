@@ -1,4 +1,4 @@
-import profileImg from "../assets/profile-img.jpg";
+import profileImg from "../assets/profile_img.jpg";
 
 export const AboutSection = () => {
   return (

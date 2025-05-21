@@ -51,13 +51,13 @@ export const HomeSection = () => {
           </div>
         </div>
 
-        <div className="w-24 lg:w-full relative">
+        <div className="w-26 lg:w-full relative">
           <img
             src={profileImg}
             alt="profile-img"
-            className="rounded-full shadow-custom w-24 lg:w-72 h-24 lg:h-72 object-cover object-top mx-auto lg:mx-0"
+            className="rounded-full shadow-custom w-36 h-36 lg:w-full 2xl:w-[28rem] lg:h-[28rem]  md:h-96 object-cover object-top mx-auto lg:mx-0"
           />
-          <div className="absolute top-0 -right-12 lg:top-0 lg:right-0 flex flex-col items-center gap-4">
+          <div className="absolute top-0 -right-12 md:top-0 md:right-0 2xl:right-16 flex flex-col items-center gap-4">
             <a
               href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
               target="_blank"

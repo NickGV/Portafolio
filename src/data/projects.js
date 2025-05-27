@@ -1,9 +1,9 @@
-import musicXplore from "../assets/musicXplore.webp";
-import fyloLandingPage from "../assets/fylo-landing-page.webp";
-import blogi from "../assets/blogi.webp";
-import eComerce from "../assets/e-commerce.webp";
-import contactEase from "../assets/contactEase.png";
-import bookNest from "../assets/bookNest.png";
+import musicXplore from "../assets/images/projects/musicXplore.webp";
+import fyloLandingPage from "../assets/images/projects/fyloLandingPage.webp";
+import blogi from "../assets/images/projects/blogi.webp";
+import eComerce from "../assets/images/projects/e-commerce.webp";
+import contactEase from "../assets/images/projects/contactEase.png";
+import bookNest from "../assets/images/projects/bookNest.png";
 
 const projects = [
   {

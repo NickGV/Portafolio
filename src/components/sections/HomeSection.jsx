@@ -1,15 +1,12 @@
-import { useState } from "react";
-import profileImg from "../assets/profile_img.jpg";
-import { GitHubIcon, LinkedInIcon } from "../assets/icons";
+import profileImg from "../../assets/images/profile/profile_img.jpg";
+import { GitHubIcon, LinkedInIcon } from "../../assets/icons";
+import { useEmailCopy } from "../../hooks/useEmailCopy";
+import { personalInfo } from "../../data/personalInfo";
 
 export const HomeSection = () => {
-  const [emailCopied, setEmailCopied] = useState(false);
-
-  const handleEmailCopy = () => {
-    navigator.clipboard.writeText("nickgomvelez@gmail.com");
-    setEmailCopied(true);
-    setTimeout(() => setEmailCopied(false), 2000);
-  };
+  const { emailCopied, handleEmailCopy } = useEmailCopy(
+    personalInfo.email
+  );
 
   return (
     <section
@@ -19,7 +16,7 @@ export const HomeSection = () => {
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 w-full lg:max-w-4xl 2xl:max-w-5xl mx-auto">
         <div className="text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl font-title font-semibold text-title flex flex-col lg:flex-row items-center gap-4">
-            <span>Mi nombre es Nicolas Gomez Velez </span>
+            <span>Mi nombre es Nicolas Gomez Velez</span>
           </h1>
           <div className="bg-green-500 text-white p-1 w-36 rounded-full shadow-lg my-2 flex justify-center items-center text-center mx-auto lg:mx-0">
             <span className="font-semibold text-xs ">
@@ -27,12 +24,12 @@ export const HomeSection = () => {
             </span>
           </div>
           <p className="text-paragraph font-paragraph text-base lg:text-lg max-w-prose mb-4">
-            Desarrollador Front-end freelance que lleva 1 año y medio
+            Desarrollador Front-end freelance que lleva 2 años
             aprendiendo y desarrollando aplicaciones web.
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4">
             <a
-              href="https://drive.google.com/uc?export=download&id=1i_x1dmnv8HBSMwPVtLCv2uOGMNYSqT9B"
+              href={personalInfo.cvLink}
               className="p-4 lg:p-4 w-40 lg:w-44 bg-button rounded-lg font-title text-button-text font-semibold hover:text-opacity-90 hover:bg-button-hover transition-all shadow-btn text-center"
             >
               Descargar CV
@@ -43,7 +40,7 @@ export const HomeSection = () => {
               className="relative text-link-text underline font-semibold text-lg font-paragraph"
               onClick={handleEmailCopy}
             >
-              Nickgomvelez@gmail.com
+              {personalInfo.email}
               <span className="absolute text-paragraph bottom-5 right-0">
                 {emailCopied && "Copiado!"}
               </span>
@@ -59,7 +56,8 @@ export const HomeSection = () => {
           />
           <div className="absolute top-0 -right-12 md:top-0 md:right-0 2xl:right-16 flex flex-col items-center gap-4">
             <a
-              href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
+              href={personalInfo.linkedinLink}
+              rel="noreferrer"
               target="_blank"
               className="relative group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-slate-950 shadow-custom rounded-full mb-4"
             >
@@ -70,7 +68,8 @@ export const HomeSection = () => {
             </a>
 
             <a
-              href="https://github.com/NickGV"
+              href={personalInfo.githubLink}
+              rel="noreferrer"
               target="_blank"
               className="group text-white hover:text-link-text hover:scale-110 transition-all p-3 lg:p-4 bg-slate-950 shadow-custom rounded-full mb-4 lg:absolute lg:-bottom-20 lg:-right-12"
             >

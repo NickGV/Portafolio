@@ -6,7 +6,7 @@ import {
   HomeIcon,
   ContactIcon,
   NavBarNavigatorIcon,
-} from "../assets/icons";
+} from "../../assets/icons";
 import { NavBarItem } from "./NavBarItem";
 
 export const NavBar = () => {

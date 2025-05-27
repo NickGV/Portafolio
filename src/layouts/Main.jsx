@@ -1,10 +1,10 @@
-import { ContactSection } from "../components/ContactSection";
-import { FooterSection } from "../components/FooterSection";
-import { HomeSection } from "../components/HomeSection";
-import { NavBar } from "../components/NavBar";
-import { ProjectsSection } from "../components/ProjectsSection";
-import { SkillsSection } from "../components/SkillsSection";
-import { AboutSection } from "../components/AboutSection";
+import { ContactSection } from "../components/sections/ContactSection";
+import { FooterSection } from "../components/sections/FooterSection";
+import { HomeSection } from "../components/sections/HomeSection";
+import { NavBar } from "../components/layout/NavBar";
+import { ProjectsSection } from "../components/sections/ProjectsSection";
+import { SkillsSection } from "../components/sections/SkillsSection";
+import { AboutSection } from "../components/sections/AboutSection";
 
 export const Main = () => {
   return (

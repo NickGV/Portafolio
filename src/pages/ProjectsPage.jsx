@@ -1,4 +1,4 @@
-import { ProjectCard } from "../components/ProjectCard";
+import { ProjectCard } from "../components/features/projects/ProjectCard";
 import projects from "../data/projects";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ import {
 export const ProjectsPage = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [activeFilters, setActiveFilters] = useState([]);
-  console.log(activeFilters);
+  
   const techIcons = [
     {
       Icon: HtmlIcon,

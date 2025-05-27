@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GitHubIcon, LinkedInIcon } from "../assets/icons";
+import { GitHubIcon, LinkedInIcon } from "../../assets/icons";
 
 export const ContactSection = () => {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -40,7 +40,7 @@ export const ContactSection = () => {
             <span className="text-sm">GitHub</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-902361274/"
+            href="https://www.linkedin.com/in/nicol%C3%A1s-g%C3%B3mez-v%C3%A9lez/"
             target="_blank"
             rel="noreferrer"
             className="flex flex-col items-center text-gray-600 hover:text-white transition-colors"

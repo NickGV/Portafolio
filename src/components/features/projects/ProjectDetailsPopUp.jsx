@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GitHubIcon, LaptopIcon } from "../assets/icons";
+import { GitHubIcon, LaptopIcon } from "../../../assets/icons";
 import PropTypes from "prop-types";
 
 export const ProjectDetailsPopUp = ({ project, onClose }) => {

@@ -1,4 +1,4 @@
-import { GitHubIcon, LaptopIcon } from "../assets/icons";
+import { GitHubIcon, LaptopIcon } from "../../../assets/icons";
 import { useState } from "react";
 import { ProjectDetailsPopUp } from "./ProjectDetailsPopUp";
 import PropTypes from "prop-types";

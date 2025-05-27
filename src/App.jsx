@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { BackgroundWatermark } from "./components/Background/BackgroundWatermark";
+import { BackgroundWatermark } from "./components/common/BackgroundWatermark";
 import { Main } from "./layouts/Main";
 import { ProjectsPage } from "./pages/ProjectsPage";
 

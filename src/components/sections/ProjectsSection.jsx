@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import projects from "../data/projects";
-import { ProjectCard } from "./ProjectCard";
+import projects from "../../data/projects";
+import { ProjectCard } from "../features/projects/ProjectCard";
 import {
   HtmlIcon,
   CssIcon,
@@ -11,13 +11,31 @@ import {
   NodejsIcon,
   ExpressJsIcon,
   MongoDBIcon,
-} from "../assets/icons";
+} from "../../assets/icons";
 
 export const ProjectsSection = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [activeFilters, setActiveFilters] = useState([]);
 
   const techIcons = [
+    {
+      Icon: HtmlIcon,
+      name: "HTML",
+      color: "hover:text-orange-500",
+      activeColor: "text-orange-500",
+    },
+    {
+      Icon: CssIcon,
+      name: "CSS",
+      color: "hover:text-blue-400",
+      activeColor: "text-blue-400",
+    },
+    {
+      Icon: JavascriptIcon,
+      name: "JavaScript",
+      color: "hover:text-yellow-400",
+      activeColor: "text-yellow-400",
+    },
     {
       Icon: ReactIcon,
       name: "React",
@@ -42,6 +60,13 @@ export const ProjectsSection = () => {
       color: "hover:text-green-500",
       activeColor: "text-green-500",
     },
+    {
+      Icon: ExpressJsIcon,
+      name: "Express",
+      color: "hover:text-gray-400",
+      activeColor: "text-gray-400",
+    },
+    
   ];
 
   useEffect(() => {

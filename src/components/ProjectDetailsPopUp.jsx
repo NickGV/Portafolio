@@ -1,7 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { GitHubIcon, LaptopIcon } from "../assets/icons";
+import PropTypes from "prop-types";
 
 export const ProjectDetailsPopUp = ({ project, onClose }) => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = project.screenshots || [project.thumbnail];
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
@@ -28,13 +32,25 @@ export const ProjectDetailsPopUp = ({ project, onClose }) => {
           X
         </button>
 
-        <div className="w-full h-64 sm:h-80 bg-gray-800 rounded-t-lg flex items-center justify-center">
-          <div className="text-white text-center">
-            <p className="text-xl mb-2">Project Video</p>
-            <p className="text-sm opacity-70">
-              Video placeholder - will display project showcase
-            </p>
-          </div>
+        <div className="w-full">
+          <img
+            src={images[currentImage]}
+            alt={`${project.title} screenshot`}
+            className="w-full h-64 sm:h-80 object-cover rounded-t-lg"
+          />
+          {images.length > 1 && (
+            <div className="flex justify-center gap-2 mt-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full ${
+                    currentImage === index ? "bg-button" : "bg-gray-600"
+                  }`}
+                  onClick={() => setCurrentImage(index)}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div>
@@ -62,7 +78,24 @@ export const ProjectDetailsPopUp = ({ project, onClose }) => {
                 <h3 className="text-xl font-semibold text-title mb-2">
                   About this project
                 </h3>
-                <p className="text-paragraph">{project.more}</p>
+                <p className="text-paragraph">{project.longDescription}</p>
+              </div>
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-title mb-2">
+                  Desafíos y Soluciones
+                </h3>
+                <ul className="space-y-3">
+                  {project.challenges?.map((item, index) => (
+                    <li key={index} className="bg-black/10 p-3 rounded">
+                      <p className="font-medium text-title">
+                        Desafío: {item.challenge}
+                      </p>
+                      <p className="text-paragraph mt-1">
+                        Solución: {item.solution}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
@@ -91,4 +124,25 @@ export const ProjectDetailsPopUp = ({ project, onClose }) => {
       </div>
     </div>
   );
+};
+
+ProjectDetailsPopUp.propTypes = {
+  project: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    longDescription: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    thumbnail: PropTypes.any.isRequired,
+    codeLink: PropTypes.string.isRequired,
+    previewLink: PropTypes.string.isRequired,
+    screenshots: PropTypes.arrayOf(PropTypes.string),
+    challenges: PropTypes.arrayOf(
+      PropTypes.shape({
+        challenge: PropTypes.string.isRequired,
+        solution: PropTypes.string.isRequired,
+      })
+    ),
+  }).isRequired,
+  onClose: PropTypes.func.isRequired,
 };

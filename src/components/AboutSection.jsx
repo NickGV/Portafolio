@@ -36,7 +36,7 @@ export const AboutSection = () => {
         <img
           src={profileImg}
           alt="profile-img"
-          className="rounded-full shadow-custom w-40 h-40 md:w-60 md:h-60 lg:w-72 lg:h-72"
+          className="rounded-full shadow-custom w-40 h-40 md:w-80 md:h-80 2xl:w-96 2xl:h-96 object-cover object-top mx-auto lg:mx-0"
         />
       </div>
     </section>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import {
   HtmlIcon,
   CssIcon,
-  JavascriptIcon,
+  JavaScriptIcon,
   ReactIcon,
   TailwindCssIcon,
   NodejsIcon,
@@ -16,7 +16,7 @@ import {
 export const ProjectsPage = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [activeFilters, setActiveFilters] = useState([]);
-  
+
   const techIcons = [
     {
       Icon: HtmlIcon,
@@ -31,7 +31,7 @@ export const ProjectsPage = () => {
       activeColor: "text-blue-400",
     },
     {
-      Icon: JavascriptIcon,
+      Icon: JavaScriptIcon,
       name: "JavaScript",
       color: "hover:text-yellow-400",
       activeColor: "text-yellow-400",

@@ -12,7 +12,7 @@ export const AboutSection = () => {
         </h1>
         <p className="text-base md:text-lg">
           Me llamo Nicolás Gómez, pero puedes llamarme Nico. Mi viaje en la
-          programación comenzó hace un año y medio, cuando empecé a aprender por
+          programación comenzó hace dos años, cuando empecé a aprender por
           mi cuenta mediante cursos en línea. Desde entonces, he trabajado en
           una variedad de proyectos personales, desde el desarrollo de
           interfaces con HTML, CSS y JavaScript, hasta el uso de frameworks

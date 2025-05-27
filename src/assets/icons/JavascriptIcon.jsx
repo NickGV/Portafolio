@@ -1,4 +1,4 @@
-export const JavascriptIcon = ({ className }) => {
+export const JavaScriptIcon = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

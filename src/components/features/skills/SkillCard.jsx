@@ -1,12 +1,15 @@
-export const SkillCard = ({ Icon, name, color }) => (
+export const SkillCard = ({ Icon, name, color, learning }) => (
   <div
-    className={`group bg-gradient-to-r from-card-background to-background p-4 sm:p-5 md:p-6 lg:p-8 rounded-2xl shadow-custom transition-all duration-300 hover:shadow-custom-hover hover:scale-105 flex flex-col items-center ${color}`}
+    className={`group bg-gradient-to-r from-card-background to-background p-3 sm:p-4 rounded-xl shadow-custom transition-all duration-300 hover:shadow-custom-hover hover:scale-105 flex flex-col items-center ${color} relative`}
   >
+    {learning && (
+      <span className="absolute -top-1 -right-1 w-3 h-3 bg-blue-400 rounded-full"></span>
+    )}
     <Icon
-      className={`group w-6 h-6 sm:w-10 md:w-12 lg:w-16  sm:h-10 md:h-12 lg:h-16 mb-2 sm:mb-3 md:mb-4 text-title ${color}`}
+      className={`w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 mb-2 text-title transition-colors ${color}`}
     />
     <span
-      className={`group font-paragraph text-paragraph text-sm sm:text-base md:text-lg lg:text-xl text-center ${color}`}
+      className={`font-paragraph text-paragraph text-xs sm:text-sm text-center leading-tight transition-colors ${color}`}
     >
       {name}
     </span>

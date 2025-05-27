@@ -5,7 +5,7 @@ import { ProjectCard } from "../features/projects/ProjectCard";
 import {
   HtmlIcon,
   CssIcon,
-  JavascriptIcon,
+  JavaScriptIcon,
   ReactIcon,
   TailwindCssIcon,
   NodejsIcon,
@@ -31,7 +31,7 @@ export const ProjectsSection = () => {
       activeColor: "text-blue-400",
     },
     {
-      Icon: JavascriptIcon,
+      Icon: JavaScriptIcon,
       name: "JavaScript",
       color: "hover:text-yellow-400",
       activeColor: "text-yellow-400",

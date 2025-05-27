@@ -1,5 +1,5 @@
 import { ContactSection } from "../components/sections/ContactSection";
-import { FooterSection } from "../components/sections/FooterSection";
+import { Footer } from "../components/layout/Footer";
 import { HomeSection } from "../components/sections/HomeSection";
 import { NavBar } from "../components/layout/NavBar";
 import { ProjectsSection } from "../components/sections/ProjectsSection";
@@ -15,7 +15,7 @@ export const Main = () => {
       <SkillsSection />
       <AboutSection />
       <ContactSection />
-      <FooterSection />
+      <Footer />
     </div>
   );
 };

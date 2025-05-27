@@ -1,7 +1,7 @@
 import {
   HtmlIcon,
   CssIcon,
-  JavascriptIcon,
+  JavaScriptIcon,
   ReactIcon,
   NodejsIcon,
   GitHubIcon,
@@ -19,13 +19,11 @@ export const frontSkills = [
   { Icon: HtmlIcon, name: "HTML", color: "group-hover:text-orange-500" },
   { Icon: CssIcon, name: "CSS", color: "group-hover:text-blue-400" },
   {
-    Icon: JavascriptIcon,
+    Icon: JavaScriptIcon,
     name: "JavaScript",
     color: "group-hover:text-yellow-400",
   },
   { Icon: ReactIcon, name: "React", color: "group-hover:text-blue-300" },
-  { Icon: GitHubIcon, name: "GitHub", color: "group-hover:text-gray-400" },
-  { Icon: GitIcon, name: "Git", color: "group-hover:text-orange-400" },
   {
     Icon: TailwindCssIcon,
     name: "Tailwind CSS",
@@ -50,4 +48,9 @@ export const backSkills = [
     name: "MongoDB",
     color: "group-hover:text-green-500",
   },
+];
+
+export const toolsSkills = [
+  { Icon: GitIcon, name: "Git", color: "group-hover:text-orange-500" },
+  { Icon: GitHubIcon, name: "GitHub", color: "group-hover:text-gray-500" },
 ];

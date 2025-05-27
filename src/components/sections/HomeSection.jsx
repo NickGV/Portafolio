@@ -52,9 +52,9 @@ export const HomeSection = () => {
           <img
             src={profileImg}
             alt="profile-img"
-            className="rounded-full shadow-custom w-36 h-36 lg:w-full 2xl:w-[28rem] lg:h-[28rem]  md:h-96 object-cover object-top mx-auto lg:mx-0"
+            className="rounded-full shadow-custom w-36 h-36 lg:w-80 lg:h-80 xl:w-full 2xl:w-[28rem] xl:h-[28rem]  md:h-96 object-cover object-top mx-auto lg:mx-0"
           />
-          <div className="absolute top-0 -right-12 md:top-0 md:right-0 2xl:right-16 flex flex-col items-center gap-4">
+          <div className="absolute top-0 -right-12 lg:right-24 lg:-top-4 xl:top-0 xl:right-0 2xl:right-16 flex flex-col items-center gap-4">
             <a
               href={personalInfo.linkedinLink}
               rel="noreferrer"

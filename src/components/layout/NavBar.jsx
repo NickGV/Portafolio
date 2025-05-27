@@ -25,38 +25,39 @@ export const NavBar = () => {
 
   return (
     <nav>
+
       <button
         onClick={toggleMenu}
-        className="fixed bottom-4 right-4 bg-card-background text-white p-4 rounded-full shadow-md shadow-gray-500 transition-all hover:text-button lg:hidden z-10"
+        className="fixed bottom-6 right-6 bg-card-background text-white p-3 rounded-full shadow-md shadow-gray-500 transition-all hover:text-button lg:hidden z-50"
       >
-        {menuOpen ? (
-          <NavBarNavigatorIcon className="w-8 h-8 text-button" />
-        ) : (
-          <NavBarNavigatorIcon className="w-8 h-8 " />
-        )}
+        <NavBarNavigatorIcon className={`w-6 h-6 transition-colors ${menuOpen ? 'text-button' : ''}`} />
       </button>
+
       <div
-        className={`fixed bottom-20 right-4 bg-card-background p-6 rounded-lg shadow-lg transition-transform duration-300 lg:hidden  ${
+        className={`fixed bottom-20 right-4 bg-card-background p-4 rounded-lg shadow-lg transition-all duration-300 lg:hidden z-40 ${
           menuOpen
-            ? "translate-y-0 opacity-100"
-            : "translate-y-20 opacity-0 pointer-events-none"
+            ? "translate-y-0 opacity-100 scale-100"
+            : "translate-y-4 opacity-0 scale-95 pointer-events-none"
         }`}
       >
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-2">
           {navItems.map((item) => (
-            <NavBarItem key={item.name} Icon={item.Icon} name={item.name} />
+            <NavBarItem 
+              key={item.name} 
+              Icon={item.Icon} 
+              name={item.name}
+              onClick={() => setMenuOpen(false)}
+            />
           ))}
         </ul>
       </div>
 
-      <div className="flex-col fixed right-0 min-h-screen items-center justify-center mr-8 hidden lg:flex">
-        <div className="font-paragraph">
-          <ul className="flex flex-col gap-8 ">
-            {navItems.map((item) => (
-              <NavBarItem key={item.name} Icon={item.Icon} name={item.name} />
-            ))}
-          </ul>
-        </div>
+      <div className="fixed right-2 md:right-4 lg:right-6 xl:right-8 top-1/2 transform -translate-y-1/2 hidden lg:flex z-40">
+        <ul className="flex flex-col gap-3 lg:gap-4 xl:gap-6">
+          {navItems.map((item) => (
+            <NavBarItem key={item.name} Icon={item.Icon} name={item.name} />
+          ))}
+        </ul>
       </div>
     </nav>
   );

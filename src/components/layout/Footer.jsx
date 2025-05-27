@@ -1,4 +1,4 @@
-export const FooterSection = () => {
+export const Footer = () => {
   return (
     <footer className="bg-card-background py-8">
       <div className="max-w-prose mx-auto text-center">

@@ -1,9 +1,9 @@
-import musicXplore from "../assets/images/projects/musicXplore.webp";
-import fyloLandingPage from "../assets/images/projects/fyloLandingPage.webp";
-import blogi from "../assets/images/projects/blogi.webp";
-import eComerce from "../assets/images/projects/e-commerce.webp";
-import contactEase from "../assets/images/projects/contactEase.png";
-import bookNest from "../assets/images/projects/bookNest.png";
+import musicXplore from "/images/projects/musicXplore.webp";
+import fyloLandingPage from "/images/projects/fyloLandingPage.webp";
+import blogi from "/images/projects/blogi.webp";
+import eComerce from "/images/projects/e-commerce.webp";
+import contactEase from "/images/projects/contactEase.png";
+import bookNest from "/images/projects/bookNest.png";
 
 const projects = [
   {
@@ -16,11 +16,12 @@ const projects = [
     thumbnail: contactEase,
     previewLink: "https://contactease-nickgv.netlify.app/",
     codeLink: "https://github.com/NickGV/ConctactEase",
-    videoUrl: "https://example.com/path-to-your-video.mp4",
+    videoUrl: "/videos/ContactEase.mp4",
     screenshots: [
-    "/path/to/screenshot1.png",
-    "/path/to/screenshot2.png",
-  ],
+      "/images/screenshots/ContactEase/screenshot1.png",
+      "/images/screenshots/ContactEase/screenshot2.png",
+      "/images/screenshots/ContactEase/screenshot3.png",
+    ],
     featured: true,
     challenges: [
       {
@@ -39,6 +40,12 @@ const projects = [
     thumbnail: bookNest,
     previewLink: "https://booknest-nickgv.netlify.app/",
     codeLink: "https://github.com/NickGV/BookNest",
+    videoUrl: "/videos/BookNest.mp4",
+    screenshots: [
+      "/images/screenshots/BookNest/screenshot1.png",
+      "/images/screenshots/BookNest/screenshot2.png",
+      "/images/screenshots/BookNest/screenshot3.png",
+    ],
     category: "Full Stack",
     featured: true,
   },
@@ -52,6 +59,11 @@ const projects = [
     thumbnail: blogi,
     previewLink: "https://blogi-nickgv.netlify.app/",
     codeLink: "https://github.com/NickGV/blog-react",
+    videoUrl: "/videos/Blogi.mp4",
+    screenshots: [
+      "/images/screenshots/Blogi/screenshot1.png",
+      "/images/screenshots/Blogi/screenshot2.png",
+    ],
     category: "Frontend",
     featured: true,
   },
@@ -65,10 +77,14 @@ const projects = [
     thumbnail: musicXplore,
     previewLink: "https://musicxplore.netlify.app/",
     codeLink: "https://github.com/NickGV/MusicXplore",
+    videoUrl: "/videos/MusicXplore.mp4",
+    screenshots: [
+      "/images/screenshots/MusicXplore/screenshot1.png",
+      "/images/screenshots/MusicXplore/screenshot2.png",
+    ],
     category: "Frontend",
     featured: true,
   },
-
   {
     id: 5,
     title: "Fylo landing page with translation",
@@ -79,6 +95,10 @@ const projects = [
     thumbnail: fyloLandingPage,
     previewLink: "https://landing-page-with-translation-nickgv.netlify.app/",
     codeLink: "https://github.com/NickGV/Fylo-Landing-Page-with-Translation",
+    screenshots: [
+      "/images/screenshots/Fylo/screenshot1.png",
+      "/images/screenshots/Fylo/screenshot2.png",
+    ],
     category: "Frontend",
     featured: true,
   },

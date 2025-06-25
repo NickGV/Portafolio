@@ -4,6 +4,7 @@ import blogi from "/images/projects/blogi.webp";
 import eComerce from "/images/projects/e-commerce.webp";
 import contactEase from "/images/projects/contactEase.png";
 import bookNest from "/images/projects/bookNest.png";
+import GestorContractos from "/images/projects/GestorContractos.png";
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
     title: "ContactEase",
     description:
       "Aplicación web para gestión de contactos con chat en tiempo real y comunicación instantánea y busquedas integrada.",
-    longDescription: "ContactEase es una aplicación web completa que facilita la gestión de contactos personales con funcionalidades avanzadas de comunicación. Permite a los usuarios agregar, editar y eliminar contactos, marcarlos como favoritos, y buscarlos por nombre, correo o teléfono. La aplicación incluye un sistema de chat en tiempo real que mantiene conversaciones persistentes entre usuarios, notificaciones de mensajes nuevos, y la posibilidad de eliminar chats individuales. Todo esto se complementa con un sistema de usuarios robusto que incluye registro, autenticación y perfiles personalizables, garantizando la seguridad mediante tokens JWT.",
+    longDescription: "Sistema completo de gestión laboral desarrollado en equipo para simplificar el manejo de contratos de trabajo y cálculos de aportes al sistema de seguridad social colombiano. Me encargué del funcionamiento general de la aplicación, resolviendo problemas técnicos, delegando tareas y asegurando la calidad del código. Durante el desarrollo enfrentamos desafíos importantes relacionados con requerimientos mal definidos y cambios en la nomenclatura, lo que me enseñó la importancia crítica de la comunicación clara y la documentación consistente en proyectos colaborativos. La aplicación cuenta con un sistema de roles robusto que permite diferentes niveles de acceso para empleados, empleadores, contadores, asesores legales y entidades gubernamentales. Los usuarios pueden crear y gestionar contratos laborales, realizar cálculos automáticos de aportes (EPS, ARL, pensión, cesantías), y generar reportes detallados en formato PDF. Este proyecto no solo demuestra habilidades técnicas en desarrollo full-stack, sino también capacidades de liderazgo técnico y resolución de problemas en entornos colaborativos.",
     technologies: ["React", "TailwindCSS", "Node.js", "Express", "MongoDB"],
     thumbnail: contactEase,
     previewLink: "https://contactease-nickgv.netlify.app/",
@@ -32,6 +33,25 @@ const projects = [
   },
   {
     id: 2,
+     title: "Gestor de Contratos Laborales",
+    description:
+      "Aplicación web full—stack para la gestión de contratos laborales, cálculos de aportes al sistema de seguridad social colombiano y generación de reportes con sistema de roles integrado.",
+    longDescription: "Sistema completo de gestión laboral desarrollado en equipo para simplificar el manejo de contratos de trabajo y cálculos de aportes al sistema de seguridad social colombiano. Como líder técnico del proyecto, me encargué del funcionamiento general de la aplicación, resolviendo problemas técnicos, delegando tareas y asegurando la calidad del código. Durante el desarrollo enfrentamos desafíos importantes relacionados con requerimientos mal definidos y cambios en la nomenclatura, lo que me enseñó la importancia crítica de la comunicación clara y la documentación consistente en proyectos colaborativos. La aplicación cuenta con un sistema de roles robusto que permite diferentes niveles de acceso para empleados, empleadores, contadores, asesores legales y entidades gubernamentales. Los usuarios pueden crear y gestionar contratos laborales, realizar cálculos automáticos de aportes (EPS, ARL, pensión, cesantías), y generar reportes detallados en formato PDF. Este proyecto no solo demuestra habilidades técnicas en desarrollo full-stack, sino también capacidades de liderazgo técnico y resolución de problemas en entornos colaborativos.",
+    technologies: ["React", "Bootstrap", "Django", "PostgreSQL"],
+    thumbnail: GestorContractos,
+    previewLink: "",
+    codeLink: "https://github.com/NickGV/Aplicativo_RegimenLaboral",
+    videoUrl: "/videos/GestorContractos.mp4",
+    screenshots: [
+      "/images/screenshots/GestorContractosLaborales/screenshot1.png",
+      "/images/screenshots/GestorContractosLaborales/screenshot2.png",
+      "/images/screenshots/GestorContractosLaborales/screenshot3.png",
+    ],
+    category: "Full Stack",
+    featured: true,
+  },
+  {
+    id: 3,
     title: "BookNest",
     description:
       "Aplicación full-stack para gestionar una biblioteca personal, con autenticación JWT y diseño responsivo.",
@@ -50,7 +70,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Blogi",
     description:
       "Aplicación de blogging React + Express que permite crear, leer, actualizar y eliminar posts, con soporte para Markdown y diseño responsivo.",
@@ -65,10 +85,10 @@ const projects = [
       "/images/screenshots/Blogi/screenshot2.png",
     ],
     category: "Frontend",
-    featured: true,
+    featured: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "MusicXplore",
     description:
       "Aplicación web para explorar, reproducir, y gestionar canciones y playlists, con integración de la API de Spotify.",
@@ -86,7 +106,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 5,
+    id: 6,
     title: "Fylo landing page with translation",
     description:
       "Página de aterrizaje en React con traducción dinámica entre inglés y español, creada como un desafío de Frontendmentor.io.",
@@ -100,20 +120,27 @@ const projects = [
       "/images/screenshots/Fylo/screenshot2.png",
     ],
     category: "Frontend",
-    featured: true,
+    featured: false,
   },
+  {
+    id: 7,
+    title: "E-Commerce",
+    description:
+      "Aplicación de comercio electrónico desarrollada en React y TailwindCSS, con gestión de productos, categorías, carrito de compras y opciones de pago.",
+    longDescription: "E-commerce Project es una aplicación de comercio electrónico diseñada para practicar React y TailwindCSS. Ofrece una página de inicio con productos destacados, categorías y los artículos más valorados. Los usuarios pueden añadir productos al carrito, modificar la cantidad, eliminar artículos y proceder al pago. La aplicación proporciona una experiencia completa de compra en línea, desde la exploración de productos hasta la gestión del carrito y la finalización de la compra, todo con un diseño moderno y responsivo gracias a TailwindCSS.",
+    technologies: ["React", "TailwindCSS"],
+    thumbnail: eComerce,
+    previewLink: "e-commerce-nickgv.netlify.app/",
+    codeLink: "https://github.com/NickGV/E-commerce",
+    videoUrl: "/videos/E-commerce.mp4",
+    screenshots: [
+      "/images/screenshots/E-commerce/screenshot1.png",
+      "/images/screenshots/E-commerce/screenshot2.png",
+      "/images/screenshots/E-commerce/screenshot3.png",
+    ],
+    category: "Frontend",
+    featured: false,
+  }
 ];
 
 export default projects;
-
-// {
-//   id: 4,
-//   title: "E-Commerce",
-//   description:
-//     "Aplicación de comercio electrónico desarrollada en React y TailwindCSS, con gestión de productos, categorías, carrito de compras y opciones de pago.",
-//   longDescription: "E-commerce Project es una aplicación de comercio electrónico diseñada para practicar React y TailwindCSS. Ofrece una página de inicio con productos destacados, categorías y los artículos más valorados. Los usuarios pueden añadir productos al carrito, modificar la cantidad, eliminar artículos y proceder al pago. La aplicación proporciona una experiencia completa de compra en línea, desde la exploración de productos hasta la gestión del carrito y la finalización de la compra, todo con un diseño moderno y responsivo gracias a TailwindCSS.",
-//   technologies: ["React", "TailwindCSS"],
-//   thumbnail: eComerce,
-//   previewLink: "e-commerce-nickgv.netlify.app/",
-//   codeLink: "https://github.com/NickGV/E-commerce",
-// },

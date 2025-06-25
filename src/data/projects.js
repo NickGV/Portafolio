@@ -43,9 +43,9 @@ const projects = [
     codeLink: "https://github.com/NickGV/Aplicativo_RegimenLaboral",
     videoUrl: "/videos/GestorContractos.mp4",
     screenshots: [
-      "/images/screenshots/GestorContractosLaborales/screenshot1.png",
-      "/images/screenshots/GestorContractosLaborales/screenshot2.png",
-      "/images/screenshots/GestorContractosLaborales/screenshot3.png",
+      "/images/screenshots/GestorContratosLaborales/screenshot1.png",
+      "/images/screenshots/GestorContratosLaborales/screenshot2.png",
+      "/images/screenshots/GestorContratosLaborales/screenshot3.png",
     ],
     category: "Full Stack",
     featured: true,
